@@ -122,7 +122,7 @@ wss.on('connection', (ws) => {
 
 // Define la ruta GET '/carrito' para renderizar vista 'carrito.handlebars'
 app.get('/carrito', async (req, res) => {
-  const cartId = '1'; // Sustituye esto con el ID real de tu carrito
+  const cartId = '1';
   try {
     const productosCarrito = await carrito.obtenerCarritoPorId(cartId);
     res.render('carrito', { productosCarrito, cartId });

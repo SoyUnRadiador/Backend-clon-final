@@ -18,7 +18,7 @@ async function sendResetPasswordEmail(email) {
             to: email, // Utiliza el correo electrónico ingresado en el input
             subject: 'Restablecimiento de Contraseña',
             html: `<p>Has solicitado restablecer tu contraseña. Haz clic en el siguiente enlace para cambiar tu contraseña:</p>
-                   <p><a href="http://tu_sitio_web.com/reset-password">Restablecer Contraseña</a></p>
+                   <p><a href="http://http://localhost:8080//reset-password">Restablecer Contraseña</a></p>
                    <p>Este enlace expirará en 1 hora.</p>`
         });
         console.log('Correo electrónico enviado con éxito:', email);
